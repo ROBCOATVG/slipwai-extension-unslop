@@ -1,0 +1,19 @@
+slipwai-extension-unslop
+
+`skill/` is unslop, by Damir Sokolovsky (https://x.com/heydamir, https://heydamir.design/unslop), from
+https://github.com/heydamir/unslop at the commit named in `UPSTREAM`. It is licensed under the Creative
+Commons Attribution 4.0 International licence (CC BY 4.0), whose full text is in `LICENSE-unslop` and at
+https://creativecommons.org/licenses/by/4.0/. No warranty is given; see section 5 of that licence.
+
+`skill/` is the upstream `skills/unslop` directory, unmodified. What `./init --extension unslop` installs from
+it is adapted in three ways, all in `init.py`:
+
+1. `SKILL.md` gains one front-matter line, `capabilities: frontend`, so the project reports the skill when it
+   no longer has a browser app.
+2. The five pictures under `references/refs/` are installed at `tools/unslop/refs/` instead, because a
+   project's skill projection copies a skill as text.
+3. The Markdown links to those pictures point at `tools/unslop/refs/`.
+
+The credit in `SKILL.md`, and the credit the skill puts on every story video, are kept as written.
+
+The rest of this package (`init.py`, `hooks/`, `tests/`, the manifest and the documentation) is ROBCOATVG's.
